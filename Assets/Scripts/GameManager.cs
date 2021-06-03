@@ -18,6 +18,7 @@ public class GameManager : MonoBehaviour
             Debug.LogWarning("Attempted to create a second GameManager");
             Destroy(this);
         }
+        DontDestroyOnLoad(this.gameObject);
     }
 
     // Start is called before the first frame update
