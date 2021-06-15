@@ -33,7 +33,7 @@ public class MainMenu : MonoBehaviour
 
     public void StartNewGame()
     {
-        // SceneManager.LoadScene("Level");
+        GameManager.Instance.ChangeGameState(GameManager.GameState.PLAYING);
         SceneManager.LoadScene(1);
     }
 
