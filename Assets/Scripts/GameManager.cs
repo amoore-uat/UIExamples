@@ -6,9 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    public GameObject HUD;
-    public GameObject pauseMenu;
-    public GameObject mainMenu;
+    public Events.EventGameStateChanged OnGameStateChanged = new Events.EventGameStateChanged();
     public enum GameState { MAINMENU, PLAYING, PAUSED };
     private GameState currentGameState = GameState.MAINMENU;
     public GameState CurrentGameState
@@ -34,25 +32,19 @@ public class GameManager : MonoBehaviour
         {
             case GameState.MAINMENU:
                 Time.timeScale = 1f;
-                HUD.SetActive(false);
-                pauseMenu.SetActive(false);
-                mainMenu.SetActive(true);
                 SceneManager.LoadScene("MainMenu");
                 break;
             case GameState.PAUSED:
                 Time.timeScale = 0f;
-                pauseMenu.SetActive(true);
                 break;
             case GameState.PLAYING:
                 Time.timeScale = 1f;
-                HUD.SetActive(true);
-                pauseMenu.SetActive(false);
-                mainMenu.SetActive(false);
                 break;
             default:
                 Debug.LogWarning("Unimplemented game state");
                 break;
         }
+        OnGameStateChanged.Invoke(newGameState, previousGameState);
     }
 
     public void QuitGame()

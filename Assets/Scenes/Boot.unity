@@ -150,6 +150,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Game Manager
       objectReference: {fileID: 0}
+    - target: {fileID: 95523465, guid: 7228c40808a24c649962f408ee572268, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3940144081048223852, guid: 7228c40808a24c649962f408ee572268,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -207,6 +211,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3940144081048223853, guid: 7228c40808a24c649962f408ee572268,
         type: 3}
+      propertyPath: OnGameStateChanged.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3940144081048223853, guid: 7228c40808a24c649962f408ee572268,
+        type: 3}
       propertyPath: HUD
       value: 
       objectReference: {fileID: 427536058}
@@ -220,5 +229,85 @@ PrefabInstance:
       propertyPath: mainMenu
       value: 
       objectReference: {fileID: 15739572}
+    - target: {fileID: 3940144081048223853, guid: 7228c40808a24c649962f408ee572268,
+        type: 3}
+      propertyPath: OnGameStateChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3940144081048223853, guid: 7228c40808a24c649962f408ee572268,
+        type: 3}
+      propertyPath: OnGameStateChanged.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3940144081048223853, guid: 7228c40808a24c649962f408ee572268,
+        type: 3}
+      propertyPath: OnGameStateChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1270237469}
+    - target: {fileID: 187215167, guid: 7228c40808a24c649962f408ee572268, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1938304503, guid: 7228c40808a24c649962f408ee572268, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1938304503, guid: 7228c40808a24c649962f408ee572268, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1989501342, guid: 7228c40808a24c649962f408ee572268, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1989501342, guid: 7228c40808a24c649962f408ee572268, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1989501342, guid: 7228c40808a24c649962f408ee572268, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1183590162, guid: 7228c40808a24c649962f408ee572268, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1183590162, guid: 7228c40808a24c649962f408ee572268, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1183590162, guid: 7228c40808a24c649962f408ee572268, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 781253117, guid: 7228c40808a24c649962f408ee572268, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 781253117, guid: 7228c40808a24c649962f408ee572268, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7228c40808a24c649962f408ee572268, type: 3}
+--- !u!1 &1270237469 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1967314222, guid: 7228c40808a24c649962f408ee572268,
+    type: 3}
+  m_PrefabInstance: {fileID: 824308865}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1270237472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1270237469}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78862560422f24947b713a891e770351, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HUD: {fileID: 427536058}
+  pauseMenu: {fileID: 583065279}
+  mainMenu: {fileID: 15739572}

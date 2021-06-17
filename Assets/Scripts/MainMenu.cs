@@ -34,7 +34,7 @@ public class MainMenu : MonoBehaviour
     public void StartNewGame()
     {
         GameManager.Instance.ChangeGameState(GameManager.GameState.PLAYING);
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene("Level");
     }
 
     public void ChangeMasterVolume(float masterVolume)
